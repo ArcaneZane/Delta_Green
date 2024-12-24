@@ -2,6 +2,6 @@
     "year": "1999",
     "serverAddress": "deltagreen.unk",
     "serverName": "Delta Green: Operations Assignment",
-    "iconName": "<img src=config/network/deltagreen.unk/dg2.png style='width: 10rem' class=glitch>",
+    "iconName": "dg2.png",
     "terminalID": "dg.oa.unk"
 }
