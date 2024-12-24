@@ -7,11 +7,11 @@
     "defaultUser": {
         "userId": "user",
         "password": "",
-        "userName": "anonymous"
+        "userName": "employee"
     },
     "initialHistory": {
         "user": [
-            "login admin:admin"
+            "login charleswyzinski:ilovemymom1"
         ]
     }
 }
