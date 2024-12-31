@@ -38,7 +38,8 @@ You can host it on Github Pages for a free and fast experience and can share the
 ## Latest News
 
 You can now configure and access extra servers at `network.json` to login via `ssh`.
-Each server will treat their respective users (and mail messages) separately.
+Each server will treat their respective users (and mail messages) separately. To perform
+`ssh serverName` or if locked behind a a single user `ssh userId:password@serverName` 
 
 ---
 ![Telnet v1](docs/telnet.gif)
@@ -86,7 +87,7 @@ That is, you can't access data of a user configured on `mailserver.json` while y
 ### manifest.json
 
 The basic configuration at `manifest.json` is what you need to change to customize your terminal.
-You can change the terminal year date, the server name, a customized icon, the terminal identification
+You can change the terminal, month date, day date, year date, the server name, a customized icon, the terminal identification
 (this is what is written just before the cursor), as well as the default user id and name (normally this will be "user",
 but it can be whatever you want).
 Note however that, once you login to the server, the username will change.
@@ -343,7 +344,7 @@ As this is a simple terminal emulation, you can't delete mails or mark as read. 
 
 ---
 
-To login you need to enter `user@password`
+To login you need to enter `user:password`
 
 ![How to login.](docs/login1.png)
 ---
@@ -368,7 +369,7 @@ You can however specify its initial command in the `manifest.json`, per `userId`
 ```json
     "initialHistory": {
         "user": [
-            "login admin@admin"
+            "login admin:admin"
         ],
         "admin": [
             "ping fbi.gov"
